@@ -4,21 +4,4 @@ Keras==2.4.0
 opencv-python==4.4.0.46
 Pillow==8.0.1
 tensorflow==2.5.0
-scikit-image==0.18.0
-git rm -r -f log
-rm 'log/development.log'
-rm 'log/production.log'
-rm 'log/server.log'
-rm 'log/test.log'
-git rm -r -f tmp
-mkdir log
-echo '*.log' > log/.gitignore
-git add log
-echo tmp >> .gitignore
-git add .gitignore
-git commit -m "ignored log files and tmp dir"
-git rm -f db/*.sqlite3
-echo '*.sqlite3' >> .gitignore
-git add .gitignore
-git commit -m "ignored sqlite databases"
-.
+scikit-image==0.18.0.
